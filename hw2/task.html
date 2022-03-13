@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Формы</title>
+</head>
+<body>
+
+<section>
+	<h2>Авторизация</h2>
+	<form action="#" method="post" name="login-form"></form>
+		<div>
+			<input type="email"  placeholder="e-mail" autofocus required minlength="5" maxlength="20" name="email">
+			<input type="password" placeholder="пароль" required minlength="6" name="password">
+		</div>
+
+		<aside>
+			<input type="text" placeholder="имя" name="name">
+			<input type="number" placeholder="возраст" name="age">
+			<input type="number" placeholder="номер телефона" name="mobile">
+		</aside>
+		
+		<div>
+			<input type="submit" value="отправить" name="send"> 
+		</div>
+</section>
+
+<section>
+	<h2>Выбор квартиры</h2>
+	<form action="#" method="post" name="choose-flat">
+		<div>
+			<label for="region"></label>
+		<select id="region" name="region" multiple>
+			<optgroup label="Район">
+				<option value="1">Адмиралтейский</option>
+				<option value="2">Василеостровский</option>
+				<option value="3">Петроградский</option>
+			</optgroup>
+		</select>
+		</div>
+
+		<div>
+			<label for="subway"></label>
+		<select id="subway" name="subway" multiple>
+			<optgroup label="Метро">
+				<option value="1">Адмиралтейская</option>
+				<option value="2">Василеостровская</option>
+				<option value="3">Петроградская</option>
+			</optgroup>	
+		</select>
+		</div>
+
+		<div>
+			<label for="street"></label>
+		<select id="street" name="street" multiple>
+			<optgroup label="Улица">
+				<option value="1">Гороховая</option>
+				<option value="2">Садовая</option>
+				<option value="3">6-я и 7-я линии В.О.</option>
+			</optgroup>	
+		</select>
+		</div>
+
+		<div>
+			<legend>Количество комнат</legend>
+			<label>
+				однокомнатная/студия:
+				<input type="checkbox" name="rooms[]" value="1">
+			</label>
+			<label>
+				двухкомнатная:
+				<input type="checkbox" name="rooms[]" value="2">
+			</label>
+			<label>
+				трехкомнатная:
+				<input type="checkbox" name="rooms[]" value="3">
+			</label>
+		</div>
+
+		<div>
+			<label>Год сдачи дома</label>
+			<input id="year" type="number" min="1960" max="2022" name="year">
+		</div>
+
+		<div>
+			<label>Максимальная стоимость (млн руб)</label>
+			<input id="price" type="number" min="6" max="20" name="price">
+		</div>
+
+		<div>
+			<label>Общая площадь (м²)</label>
+			<input id="sq" type="number" min="17" max="100" name="sq">
+		</div>
+
+		<div>
+			<legend>Чистовая отделка</legend>
+			<label>
+				есть:
+				<input type="radio" name="finish" value="yes">
+			</label>
+			<label>
+				нет:
+				<input type="radio" name="finish" value="no">
+			</label>
+		</div>
+
+		<div>
+			<legend>Терраса</legend>
+			<label>
+				есть:
+				<input type="radio" name="terrace" value="yes">
+			</label>
+			<label>
+				нет:
+				<input type="radio" name="terrace" value="no">
+			</label>
+		</div>
+
+		<div>
+			<legend>Класс жилья</legend>
+			<label>
+				бизнес-класс:
+				<input type="checkbox" name="class[]" value="1">
+			</label>
+						<label>
+				премиум:
+				<input type="checkbox" name="class[]" value="2">
+			</label>
+						<label>
+				deluxe:
+				<input type="checkbox" name="class[]" value="3">
+			</label>
+		</div>
+
+		<div>
+			<label>Этаж</label>
+			<input id="floor" type="number" min="2" max="21" name="floor">
+		</div>
+
+	</form>
+</section>
+
+</body>
+</html>
