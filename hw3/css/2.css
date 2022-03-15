@@ -1,0 +1,25 @@
+h2 {
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.up {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #B71C1C;
+}
+
+.away {
+	text-decoration: line-through #B71C1C;
+}
+
+.why {
+	font-weight: bold;
+	color: #B71C1C;
+}
+
+a {
+	color: #B71C1C;
+	text-decoration: none;
+}

@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+}
+
+li > ul {
+	display: none;
+}
+
+li {
+	list-style-type: none;
+	display: inline;
+}
+
+a {
+	color: #B71C1C;
+	text-decoration: none;
+	padding: 15px;
+}
+
+section {
+	background-color: #FBC02D;
+	padding: 2px;
+	margin-top: 15px;
+}
+
+.underline {
+	border-bottom: 3px solid #B71C1C;
+}

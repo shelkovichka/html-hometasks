@@ -1,0 +1,9 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(https://github.com/php-nodejs-developer/html-css/blob/master/lesson3/images/slide1.jpg?raw=true);
+	background-size: auto;
+	background-attachment: fixed;
+}
