@@ -1,0 +1,31 @@
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+    font-size: 20px;
+	color: #7E57C2;
+	text-align: center;
+	width: 100%;
+}
+
+.colored {
+	background-color: #B39DDB;
+}
+
+.flex-direction {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+div {
+	width: 100%;
+}
+
+p {
+	text-align: center;
+}
+
+.vertical > div {
+	display: flex;
+	flex-wrap: wrap;
+}
