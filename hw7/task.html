@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="task.css">
+    <title>Menu</title>
+</head>
+<body>
+        <ul>
+            <li><a href="#">Пункт 1</a></li>
+            
+            <li class="column">
+                <a href="#">Пункт 2</a>
+                <ul>
+                    <li class="sub1"><a href="#">Подпункт 2.1</a></li>
+
+                    <li class="sub2"><a href="#">Подпункт 2.2</a></li>  
+
+                    <li class="sub3"><a href="#">Подпункт 2.3</a></li> 
+                </ul>
+            </li>
+            
+            <li><a href="#">Пункт 3</a></li>
+
+            <li><a href="#show">Личный кабинет</a></li>
+        </ul>
+
+        <div class="container" id="show">
+
+            <div class="layer"></div>
+
+                <form class="cross">
+                    <input type="text" placeholder="логин" name="login">
+
+                    <input type="password" placeholder="пароль" name="password">
+
+                    <input id="remember" type="checkbox">
+                        <label for="remember">Запомнить</label>
+
+                    <input type="submit" value="войти" name="submit" class="submit"> 
+
+                    <a id="close" href="#">×</a>
+                </form> 
+  
+        </div>
+
+</body>
+</html>
