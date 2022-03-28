@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 15px;
+    background-color: #EFEBE9;
+    width: 100%;
+}
+
+.bl {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #1A237E;
+    color: #FAFAFA;
+    column-gap: 40px;
+    flex-grow: 1;
+}
+
+.bl a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: flex-start;
+    background-color: #1A237E;
+    color: #FAFAFA;
+    column-gap: 40px;
+    margin-top: 15px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.form {
+    height: auto;
+    align-items: center;
+    
+}
+
+.flex-1 {
+    color: #1A237E;
+    padding-top: 5px;
+}
+
+.flex-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: none;
+}
+
+h2 {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+p {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.color {
+    background-color: #1A237E;
+    color: #EFEBE9;
+    height: 95%;
+}
+
+.margin {
+    margin: 10px;
+}
+
+.cost {
+    display: flex;
+    margin-top: auto;
+}
+
+footer {
+    background-color: #1A237E;
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 539px) {
+
+    #menu1,
+    #menu2,
+    .-xs {
+        display: none;
+    }
+
+    #menu1:target {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-top: 10px;
+        color: white;
+    }
+
+    .bl {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        color: #1A237E;
+        text-decoration: none;
+        padding-bottom: 10px;
+    }
+
+    #menu2:target {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-top: 10px;
+        color: #1A237E;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-top: 10px;
+        color: #1A237E;
+        text-decoration: none;
+    }
+
+    .col-xs-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+
+    .bl {
+        display: flex;
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-top: 50px;
+    }
+
+    .form {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #menu2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .bl {
+        display: flex;
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-top: 50px;
+    }
+
+    .form {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #menu2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .bl {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 0;
+    }   
+
+    .menu {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #menu2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-1,
+    .flex-2 {
+        padding: 10px;
+    }
+
+    .flex-1 {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        column-gap: 40px;
+    }
+
+    .flex-2 {
+        display: flex;
+        flex: 4;
+        color: #1A237E;
+        flex-wrap: wrap;
+    }
+
+    .sections {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .form {
+        display: flex;
+        position: static;
+        justify-content: flex-end;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+
+    .col-lg-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-lg-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+} 
